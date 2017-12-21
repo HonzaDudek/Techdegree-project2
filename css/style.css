@@ -1,0 +1,487 @@
+/* ========= Universal selector ========= */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    /*color: #4a4a4a;*/
+}
+
+.clear:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.wrapper {
+    min-width: 250px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ========= Mobile devices ========= */
+
+
+
+
+
+/* ========= Header styles ========= */
+
+
+h2 {
+    text-transform: uppercase;
+    color: #f4b50b;
+    text-align: center;
+}
+
+.main-header {
+    text-align: center;
+    background-color: #4a4a4a;
+}
+
+.name {
+    margin: 0 auto;
+    padding: 20px;
+    color: #f4b50b;
+}
+
+.main-nav {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.menu {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 0 5px 0;
+}
+
+.menu li {
+    list-style-type: none;
+    margin: 5px auto;
+    text-align: center;
+    width: 90%;
+    background-color: white;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #4a4a4a;
+}
+
+.menu li:hover {
+    background-color: #4a4a4a;
+}
+
+.menu li a:hover {
+    color: white;
+}
+
+/* ========= Body styles ========= */
+
+.main {
+    min-width: 250px;
+    max-width: 1200px;
+}
+
+.intro {
+    text-align: center;
+    background-color: #4a4a4a;
+    padding: 25px 0;
+}
+
+.intro p {
+    color: white;
+    width: 80%;
+    margin: 5px auto;
+}
+
+.profile-image {
+    width: 80%;
+}
+
+.primary-content {
+    text-align: center;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.portfolio-image {
+    width: 90%;
+}
+
+.col {
+    margin: 20px 0;
+    padding: 1em 1em;
+
+}
+
+.contact {
+    background-color: #4a4a4a;
+    padding: 25px 0;
+    text-align: center;
+}
+
+.contact-info {
+    margin: 10px auto;
+
+}
+
+.contact p {
+    font-weight: lighter;
+    width: 90%;
+    margin: 10px auto;
+    color: white;
+}
+.contact-info a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* ========= Footer styles ========= */
+
+footer {
+    border-top: solid 2px #f4b50b;
+    width: 90%;
+    height: 50px;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+footer p {
+    float: left;
+    width: 50%;
+    margin: 10px auto;
+}
+
+footer p a {
+   text-transform: uppercase;
+    text-decoration: none;
+}
+
+.footer-nav {
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+
+.menu-bottom {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.menu-bottom {
+    margin: 10px auto;
+    padding: 0;
+    vertical-align: top;
+}
+
+.footer-nav li a{
+    text-align: right;
+    text-transform: uppercase;
+    color: #f4b50b;
+}
+
+.student-name {
+    text-align: left;
+}
+
+.footer-nav-full {
+    display: none;
+}
+
+/* ===================== Media queries ===================== */
+
+/* ========= 768 pixels ========= */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* ========= Header styles ========= */
+    .main-header {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .name {
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .main-nav {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        margin: 0 0 0 0;
+    }
+
+    .menu {
+        text-align: center;
+        margin: 0 auto;
+        padding: 0 0 5px 0;
+        display: inline-block;
+    }
+
+    .menu li {
+        display: inline-block;
+        list-style-type: none;
+        margin: 5px auto;
+        text-align: center;
+        width: 120px;
+        background-color: white;
+    }
+
+    .menu li a {
+        padding: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+
+    }
+
+    .menu li:hover {
+        background-color: #4a4a4a;
+    }
+
+    .menu li a:hover {
+        color: white;
+    }
+
+
+    /* ========= Body styles ========= */
+
+    .intro,
+    .primary-content {
+        margin: 0 auto;
+    }
+
+
+   .intro p {
+       font-size: 1.2rem;
+       font-weight: lighter;
+       width: 55%;
+       text-align: left;
+       padding: 10px 10px;
+       margin: 0;
+   }
+
+    .profile-image {
+       float: right;
+       width: 45%;
+        padding-right: 10px
+   }
+
+    .portfolio-image{
+        width: 100%;
+    }
+    .col {
+        text-align: center;
+        float: left;
+        width: 50%;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+
+    .contact p {
+        width: 80%;
+        color: white;
+    }
+
+
+
+    /* ========= Footer styles ========= */
+
+
+    footer {
+        width: 90%;
+        height: 50px;
+        margin: 0 auto;
+        font-weight: bold;
+    }
+
+    footer p {
+        float: left;
+        width: 50%;
+        margin: 10px auto;
+    }
+
+    footer p a {
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    .contact-info {
+        display: inline-block;
+        margin: 10px auto;
+    }
+
+    .menu-bottom {
+        display: none;
+    }
+
+    .student-name {
+        text-align: left;
+        display: inline-block;
+        width: 25%;
+    }
+
+    .footer-nav-full {
+        display: inline-block;
+        text-align: right;
+        width: 60%;
+        margin-left: 15%;
+    }
+
+}
+
+
+
+
+/* ========= 1024 pixels ========= */
+
+@media (min-width: 1024px) {
+
+
+    /* ========= Header styles ========= */
+    .main-header {
+        margin: 1px auto;
+        width: 100%;
+        max-width: 1200px;
+        position: fixed;
+        top: 0;
+    }
+
+    .name {
+        margin: 0 auto;
+        padding: 10px;
+        display: inline-block;
+        float: left;
+        width: 30%;
+        height: 100%;
+        text-align: left;
+
+    }
+
+    .main-nav {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        float: right;
+        display: inline-block;
+        width: 50%;
+        padding-right: 20px;
+    }
+
+    .menu {
+        text-align: right;
+        margin: 0 auto;
+    }
+
+    .menu li {
+        display: inline-block;
+        list-style-type: none;
+        margin: 5px auto;
+        text-align: center;
+        width: 30%;
+        background-color: white;
+    }
+
+    .menu li a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .menu li:hover {
+        background-color: #4a4a4a;
+    }
+
+    .menu li a:hover {
+        color: #f4b50b;
+    }
+
+
+    /* ========= Body styles ========= */
+
+    .primary-content {
+        margin: 5px auto;
+    }
+
+    .intro {
+        margin-top: 55px;
+    }
+
+    .intro p {
+        float: left;
+        width: 55%;
+        text-align: left;
+        padding-top: 20px;
+        padding-left: 10px;
+        font-size: 1.4em;
+        line-height: 1.3em;
+    }
+
+    .profile-image {
+        float: right;
+        width: 45%;
+        padding: 20px;
+    }
+
+    .portfolio-image{
+        width: 100%;
+    }
+    .col {
+        text-align: center;
+        float: left;
+        width: 33%;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        margin: 0 auto;
+    }
+
+    .contact p {
+        width: 80%;
+    }
+
+
+    /* ========= Footer styles ========= */
+
+
+    footer {
+        width: 100%;
+        height: 50px;
+        margin: 0 auto;
+        font-weight: bold;
+    }
+
+    .menu-bottom {
+        display: none;
+    }
+
+    .student-name {
+        text-align: left;
+        float: left;
+        width: 20%;
+        margin-left: 10px;
+    }
+
+    .menu {
+        align-self: right;
+    }
+
+    .footer-nav-full {
+        float: right;
+        display: inline-block;
+        text-align: right;
+        width: 40%;
+    }
+
+    .footer-nav-full li {
+        margin: auto;
+    }
+
+    .footer-nav-full a {
+        margin: 0 5px;
+    }
+}
